@@ -16,5 +16,8 @@ class Filiere extends Model
     public function efps(){
         return $this->belongsToMany(EFP::class)->withTimestamps();
     }
+    public function modules(){
+        return $this->hasMany(Module::class);
+    }
 
 }

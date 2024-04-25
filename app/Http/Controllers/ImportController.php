@@ -26,4 +26,5 @@ class ImportController extends Controller
         Excel::import(new multiImport, $file);
         return "success";
     }
+    
 }

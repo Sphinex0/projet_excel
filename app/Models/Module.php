@@ -12,5 +12,14 @@ class Module extends Model
     public function filiere(){
         return $this->belongsTo(Filiere::class);
     }
+    public function presentiel()
+    {
+        return $this->hasOne(Presentiel::class);
+    }
+
+    public function synch()
+    {
+        return $this->hasOne(Synch::class);
+    }
 
 }
